@@ -10,7 +10,9 @@ The application:
 4. **Simulate trading strategies** price prediction and track their performance over time.
 
 ## Demo (Ongoing)
+![Alt Text](assets/img-1.png)
 
+![Alt Text](assets/img-2.png)
 ## Test
 ```bash
 $ python -m unittest stock_data_test.py
