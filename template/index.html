@@ -1,0 +1,21 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulated Real-Time Trading Data</title>
+</head>
+<body>
+    <h1>Select a Ticker</h1>
+    <form action="http://localhost:8501" method="POST">
+        <label for="ticker">Choose a Ticker:</label>
+        <select name="ticker" id="ticker">
+            {% for ticker in tickers %}
+            <option value="{{ ticker }}">{{ ticker }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
